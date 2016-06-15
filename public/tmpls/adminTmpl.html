@@ -2,4 +2,16 @@
 
 <button ng-click="createProducts(product)">Add a product</button>
 
-<input ng-model="product">
+<input ng-model="product.title" placeholder="title">
+<input ng-model="product.description" placeholder="description">
+<input ng-model="product.price" placeholder="price">
+
+<br> <br>
+
+<div ng-repeat="product in products">
+  <b>Product Name: {{product.title}} </b> <br>
+  <b>Description: {{product.description}}</b> <br>
+  <b>Price: ${{product.price}}</b> <br>
+  <button ng-click="deleteProducts(product)">Delete</button>
+  <br> <br>
+</div>

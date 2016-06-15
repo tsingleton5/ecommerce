@@ -1,8 +1,10 @@
-<h2>HOME</h2>
+<h2>LIST OF PRODUCTS</h2>
 
 
 <div ng-repeat="product in products">
-  {{product.name}}
+  * <b>Product Name: {{product.title}} </b> <br>
+  <b>Description: {{product.description}}</b> <br>
+  <b>Price: ${{product.price}}</b> <br> <br>
 </div>
 
 <!-- {{products}} -->

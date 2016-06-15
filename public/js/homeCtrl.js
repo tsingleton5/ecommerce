@@ -1,6 +1,6 @@
-angular.module("app").controller("homeCtrl", function($scope, getProductService) {
+angular.module("app").controller("homeCtrl", function($scope, callService) {
 
-getProductService.getProducts()
+callService.getProducts()
   .then(function (response) {
     $scope.products = response.data;
   })
